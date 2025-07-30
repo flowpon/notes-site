@@ -41,7 +41,7 @@ blog: false
 collections:
   notes:
     output: true
-    permalink: /notes/:name/
+    permalink: /notes/:title/
 
 defaults:
   - scope:

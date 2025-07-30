@@ -1,0 +1,15 @@
+---
+layout: default
+title: ノート一覧
+---
+
+<main class="page-content" aria-label="Content">
+  <div class="wrapper">
+    <h1>📝 ノート一覧</h1>
+    <ul>
+      {% for note in site.notes %}
+      <li><a href="{{ note.url }}">{{ note.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</main>

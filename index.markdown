@@ -4,7 +4,7 @@ title: ホーム
 ---
 
 <header>
-  <h1>📚 My Notes</h1>
+  <h1>FlowBook📚</h1>
 </header>
 
 <div id="home">

@@ -10,8 +10,17 @@ body {
 }
 
 strong {
-  color: #d2691e; /* チョコレート色（好みに合わせて変更） */
+  color: #d2691e;
   font-weight: bold;
+}
+
+#home ul li::before {
+  content: "✿";
+  color: #a57264;
+  margin-right: 0.5em;
+  font-weight: bold;
+  font-size: 1.2em;
+  vertical-align: middle;
 }
 
 /* ヘッダーとタイトル */
@@ -141,8 +150,8 @@ footer {
 
 /* === コードブロック全体 === */
 .highlight {
-  background-color: #fff8f0; /* 明るいクリームベージュ */
-  color: #3b2f2f; /* 濃いブラウン */
+  background-color: #fff8f0;
+  color: #3b2f2f;
   padding: 1.2em;
   border-radius: 12px;
   overflow-x: auto;
@@ -153,44 +162,44 @@ footer {
 
 /* === キーワード（public, classなど） === */
 .highlight .k {
-  color: #d2691e; /* チョコレートブラウン */
+  color: #d2691e;
 }
 
 /* === 文字列（"..."など） === */
 .highlight .s {
-  color: #d94f70; /* 鮮やかなローズピンク */
+  color: #d94f70;
   font-style: italic;
 }
 
 /* === コメント（//...など） === */
 .highlight .c {
-  color: #7f7f7f; /* ミディアムグレー */
+  color: #7f7f7f;
   font-style: italic;
 }
 
 /* === 数値やリテラル === */
 .highlight .m {
-  color: #f2a365; /* 明るいオレンジイエロー */
+  color: #f2a365;
 }
 
 /* === 変数・関数名など === */
 .highlight .n {
-  color: #6a4c93; /* 落ち着いたパープル */
+  color: #6a4c93;
 }
 
 /* === クラス名 / 型名など === */
 .highlight .nc {
-  color: #d9772a; /* 明るいブラウンオレンジ */
+  color: #d9772a;
 }
 
 /* === 関数呼び出し（printlnなど） === */
 .highlight .nf {
-  color: #3b82f6; /* はっきりした青 */
+  color: #3b82f6;
 }
 
 /* === 演算子や記号 === */
 .highlight .o {
-  color: #ef4444; /* 鮮やかな赤 */
+  color: #ef4444;
 }
 
 /* スマホ・タブレット対応レスポンシブ */

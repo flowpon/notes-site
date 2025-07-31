@@ -1,6 +1,6 @@
 # notes-site
 
-学習用のノートをまとめた個人用Jekyllサイトです。
+学習用のノートをまとめた個人用 Jekyll サイトです。
 
 ---
 
@@ -8,9 +8,9 @@
 
 ### 必要なもの
 
-- Ruby  
-- Bundler  
-- Jekyll  
+- Ruby
+- Bundler
+- Jekyll
 
 ### 起動手順
 
@@ -24,3 +24,4 @@ bundle install
 
 # ローカルサーバー起動
 bundle exec jekyll serve
+```

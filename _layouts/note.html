@@ -1,15 +1,27 @@
----
-layout: default
-title: ノート一覧
----
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ page.title }}</title>
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/style.css' | relative_url }}"
+    />
+    <script src="{{ '/assets/js/toc.js' | relative_url }}" defer></script>
+  </head>
+  <body class="{% if page.layout == 'note' %}note-page{% endif %}">
+    <header>
+      <a href="{{ '/' | relative_url }}">&larr; 戻る</a>
+      <h1>{{ page.title }}</h1>
+    </header>
 
-<main class="page-content" aria-label="Content">
-  <div class="wrapper">
-    <h1>📝 ノート一覧</h1>
-    <ul>
-      {% for note in site.notes %}
-      <li><a href="{{ note.url }}">{{ note.title }}</a></li>
-      {% endfor %}
-    </ul>
-  </div>
-</main>
+    <div class="container">
+      <main class="content">{{ content }}</main>
+    </div>
+
+    <footer>
+      <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
+    </footer>
+  </body>
+</html>

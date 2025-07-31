@@ -1,14 +1,28 @@
 ---
 layout: default
-title: Home
+title: ホーム
 ---
 
-<div class="top-wrapper">
-  <h1>ようこそ、私のノートカフェへ</h1>
-  <p>ここは、日々の気づきや思いつきを静かに書きとめる、小さなノートのような空間です。</p>
-  <!-- <p>コーヒーを片手に、ゆっくり読んでいってください☕</p> -->
+<header>
+  <h1>📚 My Notes</h1>
+</header>
 
-  <div class="note-link">
-    <a href="/notes/">ノートを読む</a>
-  </div>
+<div id="home">
+  <ul>
+    {% for note in site.notes %}
+      <li data-tags="{{ note.tags | join: ',' | downcase }}">
+        <a href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a> - {{ note.date | date: "%Y/%m/%d" }}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="tag-filters">
+  <button class="tag-filter" data-tag="all">すべて</button>
+  {% assign all_tags = site.notes | map: 'tags' | join: ',' | split: ',' | uniq %}
+  {% for tag in all_tags %}
+    {% if tag != "" %}
+      <button class="tag-filter" data-tag="{{ tag | strip }}">{{ tag | strip }}</button>
+    {% endif %}
+  {% endfor %}
 </div>

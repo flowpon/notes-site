@@ -1,0 +1,255 @@
+/* ベース */
+body {
+  font-family: "Noto Serif JP", serif;
+  background-color: #fdfbf8;
+  color: #3e3e3e;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2rem;
+  line-height: 1.8;
+}
+
+strong {
+  color: #d2691e; /* チョコレート色（好みに合わせて変更） */
+  font-weight: bold;
+}
+
+/* ヘッダーとタイトル */
+header,
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
+  color: #a57264;
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.note-page header h1 {
+  font-size: 1rem;
+}
+
+main.content h1 {
+  font-size: 1rem; /* 16px */
+  font-weight: bold;
+  margin-top: 1.5em;
+}
+
+main.content h2 {
+  font-size: 0.9375rem; /* 約15px */
+  font-weight: bold;
+  margin-top: 1.25em;
+}
+/* タグフィルター */
+.tag-filters {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.tag-filter {
+  background-color: #f1e3dc;
+  color: #a57264;
+  border: none;
+  padding: 0.4em 0.8em;
+  margin: 0.2em;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tag-filter:hover:not(.active) {
+  background-color: #e7d5cd;
+  color: #8b5e57;
+}
+
+.tag-filter.active {
+  background-color: #d49fa3;
+  color: white;
+  box-shadow: 0 4px 8px rgba(212, 159, 163, 0.5);
+}
+
+/* ノート一覧 */
+.note-list {
+  list-style: none;
+  padding: 0;
+}
+
+.note-item {
+  background-color: #fffdfc;
+  border: 1px solid #f1e3dc;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+  text-align: left;
+  font-family: "Noto Serif JP", serif;
+}
+
+.note-item:hover {
+  transform: scale(1.02);
+}
+
+.note-item h2 {
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem;
+  color: #a57264;
+  font-family: "Playfair Display", serif;
+}
+
+.note-date {
+  font-size: 0.9rem;
+  color: #888;
+  font-family: "Noto Serif JP", serif;
+}
+
+.tags {
+  margin-top: 0.5rem;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #f1e3dc;
+  color: #a57264;
+  font-size: 0.85rem;
+  padding: 0.3em 0.6em;
+  margin-right: 0.4em;
+  border-radius: 8px;
+  font-family: "Noto Serif JP", serif;
+}
+
+/* 本文エリア */
+.note-content {
+  flex: 1;
+  max-width: 650px;
+  color: #3e3e3e;
+  line-height: 1.7;
+  font-family: "Noto Serif JP", serif;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #999;
+  margin-top: 3rem;
+  font-family: "Noto Serif JP", serif;
+}
+
+/* === コードブロック全体 === */
+.highlight {
+  background-color: #fff8f0; /* 明るいクリームベージュ */
+  color: #3b2f2f; /* 濃いブラウン */
+  padding: 1.2em;
+  border-radius: 12px;
+  overflow-x: auto;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  font-family: Consolas, Monaco, "Courier New", monospace;
+}
+
+/* === キーワード（public, classなど） === */
+.highlight .k {
+  color: #d2691e; /* チョコレートブラウン */
+}
+
+/* === 文字列（"..."など） === */
+.highlight .s {
+  color: #d94f70; /* 鮮やかなローズピンク */
+  font-style: italic;
+}
+
+/* === コメント（//...など） === */
+.highlight .c {
+  color: #7f7f7f; /* ミディアムグレー */
+  font-style: italic;
+}
+
+/* === 数値やリテラル === */
+.highlight .m {
+  color: #f2a365; /* 明るいオレンジイエロー */
+}
+
+/* === 変数・関数名など === */
+.highlight .n {
+  color: #6a4c93; /* 落ち着いたパープル */
+}
+
+/* === クラス名 / 型名など === */
+.highlight .nc {
+  color: #d9772a; /* 明るいブラウンオレンジ */
+}
+
+/* === 関数呼び出し（printlnなど） === */
+.highlight .nf {
+  color: #3b82f6; /* はっきりした青 */
+}
+
+/* === 演算子や記号 === */
+.highlight .o {
+  color: #ef4444; /* 鮮やかな赤 */
+}
+
+/* スマホ・タブレット対応レスポンシブ */
+@media screen and (max-width: 1024px) {
+  body {
+    padding: 1.5rem;
+  }
+  .container {
+    max-width: 100%;
+  }
+  .note-item {
+    padding: 0.8rem;
+    margin-bottom: 1.2rem;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+}
+
+/* スマホなど画面幅が狭い時は縦並び */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 0;
+  }
+  .toc-sidebar {
+    max-height: none;
+    position: relative;
+    border-right: none;
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+  header h1 {
+    font-size: 1.8rem;
+  }
+  .note-item {
+    padding: 0.7rem;
+    font-size: 0.95rem;
+  }
+  .tag-filter {
+    padding: 0.3em 0.6em;
+    font-size: 0.9rem;
+  }
+}
+
+/* 超小型スマホ向け */
+@media screen and (max-width: 480px) {
+  body {
+    padding: 1rem;
+  }
+  header h1 {
+    font-size: 1.6rem;
+  }
+  .note-item {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+  .tag-filter {
+    padding: 0.25em 0.5em;
+    font-size: 0.85rem;
+  }
+}

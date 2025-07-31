@@ -35,13 +35,16 @@ plugins:
 
 markdown: kramdown
 highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+
 # ブログ機能を無効化
 blog: false
 
 collections:
   notes:
     output: true
-    permalink: /notes/:title/
+    permalink: /notes/:name/
 
 defaults:
   - scope:

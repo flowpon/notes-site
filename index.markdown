@@ -1,6 +1,6 @@
 ---
 layout: default
-title: ホーム
+title: FlowBook
 ---
 
 <header>

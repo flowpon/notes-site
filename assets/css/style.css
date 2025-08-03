@@ -38,20 +38,29 @@ header h1 {
 }
 
 .note-page header h1 {
-  font-size: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 main.content h1 {
-  font-size: 1rem; /* 16px */
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 2em;
+}
+
+main.content h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 1.8em;
+}
+
+main.content h3 {
+  font-size: 1.1rem;
   font-weight: bold;
   margin-top: 1.5em;
 }
 
-main.content h2 {
-  font-size: 0.9375rem; /* 約15px */
-  font-weight: bold;
-  margin-top: 1.25em;
-}
 /* タグフィルター */
 .tag-filters {
   text-align: center;
@@ -228,6 +237,9 @@ span code {
   header h1 {
     font-size: 2rem;
   }
+  .note-page header h1 {
+    font-size: 1.8rem;
+  }
 }
 
 /* スマホなど画面幅が狭い時は縦並び */
@@ -246,6 +258,9 @@ span code {
   header h1 {
     font-size: 1.8rem;
   }
+  .note-page header h1 {
+    font-size: 1.6rem;
+  }
   .note-item {
     padding: 0.7rem;
     font-size: 0.95rem;
@@ -263,6 +278,9 @@ span code {
   }
   header h1 {
     font-size: 1.6rem;
+  }
+  .note-page header h1 {
+    font-size: 1.4rem;
   }
   .note-item {
     padding: 0.5rem;

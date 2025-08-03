@@ -260,6 +260,41 @@ span code {
   white-space: nowrap;
 }
 
+/* === ライトモード用 === */
+.highlight .k {
+  color: #0057b7;
+  font-weight: bold;
+}
+.highlight .s {
+  color: #008672;
+  font-style: italic;
+}
+.highlight .c,
+.highlight .c1,
+.highlight .cm,
+.highlight .cp,
+.highlight .cmt {
+  color: #bcc3c7 !important;
+  font-style: italic;
+}
+
+.highlight .m {
+  color: #b3006f;
+}
+.highlight .n {
+  color: #2c3e50;
+}
+.highlight .nc {
+  color: #6f42c1;
+  font-weight: bold;
+}
+.highlight .nf {
+  color: #007a5e;
+}
+.highlight .o {
+  color: #e60049;
+}
+
 /* レスポンシブ対応 */
 @media screen and (max-width: 1024px) {
   body {

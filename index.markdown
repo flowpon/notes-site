@@ -12,7 +12,7 @@ title: FlowBook
   <ul>
     {% for note in site.notes %}
       <li data-tags="{{ note.tags | join: ',' | downcase }}">
-        <a href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a> - {{ note.date | date: "%Y/%m/%d" }}
+        <a href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
       </li>
     {% endfor %}
   </ul>

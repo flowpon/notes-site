@@ -4,6 +4,7 @@ title: FlowBook
 ---
 
 <header>
+  <button id="toggle-dark-mode">🌓 ダークモード切替</button>
   <h1>FlowBook📚</h1>
 </header>
 

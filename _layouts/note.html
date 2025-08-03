@@ -4,12 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ page.title }}</title>
+    <!-- ダークモード一瞬のライトモード防止 -->
+    <script>
+      if (localStorage.getItem("darkMode") === "enabled") {
+        document.documentElement.classList.add("dark-mode");
+      }
+    </script>
+
     <link
       rel="stylesheet"
       href="{{ '/assets/css/style.css' | relative_url }}"
     />
     <script src="{{ '/assets/js/toc.js' | relative_url }}" defer></script>
   </head>
+  <script src="{{ '/assets/js/darkmode-toggle.js' | relative_url }}"></script>
   <body class="{% if page.layout == 'note' %}note-page{% endif %}">
     <header>
       <a href="{{ '/' | relative_url }}">&larr; 戻る</a>

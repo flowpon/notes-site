@@ -9,6 +9,43 @@ body {
   line-height: 1.8;
 }
 
+/* ダークモード用 */
+html.dark-mode {
+  background-color: #1e1e1c;
+  color: #d9d4cc;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html.dark-mode body {
+  background-color: #1e1e1c;
+  color: #d9d4cc;
+}
+
+html.dark-mode a {
+  color: #a7c7c5;
+  text-decoration: underline;
+}
+
+html.dark-mode .note-item {
+  background-color: #2a2a27;
+  border-color: #44443f;
+}
+
+#toggle-dark-mode {
+  background-color: #44443f;
+  color: #d9d4cc;
+  border: none;
+  padding: 0.4em 0.8em;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+#toggle-dark-mode:hover {
+  background-color: #5a5a57;
+}
+
 strong {
   color: #d2691e;
   font-weight: bold;
@@ -87,6 +124,16 @@ main.content h3 {
   background-color: #d49fa3;
   color: white;
   box-shadow: 0 4px 8px rgba(212, 159, 163, 0.5);
+}
+
+/* ✅ ダークモードでタグフィルターの背景変更 */
+html.dark-mode .tag-filter {
+  background-color: #3a3937;
+  color: #d9d4cc;
+}
+html.dark-mode .tag-filter.active {
+  background-color: #d49fa3;
+  color: white;
 }
 
 /* ノート一覧 */
@@ -169,46 +216,37 @@ footer {
   font-family: Consolas, Monaco, "Courier New", monospace;
 }
 
-/* === キーワード（public, classなど） === */
-.highlight .k {
-  color: #d2691e;
+/* ✅ ダークモードでコードブロックを暗く */
+html.dark-mode .highlight {
+  background-color: #2a2a27;
+  color: #d9d4cc;
 }
 
-/* === 文字列（"..."など） === */
-.highlight .s {
-  color: #d94f70;
+html.dark-mode .highlight .k {
+  color: #e89c5c;
+}
+html.dark-mode .highlight .s {
+  color: #f58ca3;
   font-style: italic;
 }
-
-/* === コメント（//...など） === */
-.highlight .c {
-  color: #7f7f7f;
+html.dark-mode .highlight .c {
+  color: #999;
   font-style: italic;
 }
-
-/* === 数値やリテラル === */
-.highlight .m {
-  color: #f2a365;
+html.dark-mode .highlight .m {
+  color: #f2b27d;
 }
-
-/* === 変数・関数名など === */
-.highlight .n {
-  color: #6a4c93;
+html.dark-mode .highlight .n {
+  color: #baa6ff;
 }
-
-/* === クラス名 / 型名など === */
-.highlight .nc {
-  color: #d9772a;
+html.dark-mode .highlight .nc {
+  color: #ffaf5a;
 }
-
-/* === 関数呼び出し（printlnなど） === */
-.highlight .nf {
-  color: #3b82f6;
+html.dark-mode .highlight .nf {
+  color: #6fb7ff;
 }
-
-/* === 演算子や記号 === */
-.highlight .o {
-  color: #ef4444;
+html.dark-mode .highlight .o {
+  color: #ef7777;
 }
 
 /* インラインコードのスタイル */
@@ -222,7 +260,7 @@ span code {
   white-space: nowrap;
 }
 
-/* スマホ・タブレット対応レスポンシブ */
+/* レスポンシブ対応 */
 @media screen and (max-width: 1024px) {
   body {
     padding: 1.5rem;
@@ -242,7 +280,6 @@ span code {
   }
 }
 
-/* スマホなど画面幅が狭い時は縦並び */
 @media screen and (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -271,7 +308,6 @@ span code {
   }
 }
 
-/* 超小型スマホ向け */
 @media screen and (max-width: 480px) {
   body {
     padding: 1rem;

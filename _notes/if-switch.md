@@ -1,4 +1,5 @@
 ---
+layout: note
 title: 条件分岐の基本（if文とswitch文）
 date: 2025-08-03
 tags: [Java基礎, Java, if文, switch文, 条件分岐]

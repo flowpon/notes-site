@@ -11,7 +11,7 @@ title: FlowBook
     <input 
       type="text" 
       id="search-input" 
-      placeholder="ノートのタイトルやタグで検索..." 
+      placeholder="ノートのタイトルやタグ、内容で検索..." 
       class="search-input"
     >
     <div class="search-icon">🔍</div>
@@ -21,19 +21,20 @@ title: FlowBook
 <div id="home">
   <ul>
     {% for note in site.notes %}
-      <li data-tags="{{ note.tags | join: ',' | downcase }}">
-        <a href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
+      <li class="note-item" 
+          data-tags="{{ note.tags | join: ',' | downcase }}"
+          data-content="{{ note.content | strip_html | truncate: 300 | escape }}">
+        <a href="{{ site.baseurl }}{{ note.url }}">
+          <h2>✿ {{ note.title }}</h2>
+          {% if note.tags %}
+            <div class="tags">
+              {% for tag in note.tags %}
+                <span class="tag">{{ tag }}</span>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </a>
       </li>
     {% endfor %}
   </ul>
-</div>
-
-<div class="tag-filters">
-  <button class="tag-filter" data-tag="all">すべて</button>
-  {% assign all_tags = site.notes | map: 'tags' | join: ',' | split: ',' | uniq %}
-  {% for tag in all_tags %}
-    {% if tag != "" %}
-      <button class="tag-filter" data-tag="{{ tag | strip }}">{{ tag | strip }}</button>
-    {% endif %}
-  {% endfor %}
 </div>

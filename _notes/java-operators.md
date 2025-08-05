@@ -1,4 +1,5 @@
 ---
+layout: note
 title: Javaの演算子まとめ
 date: 2025-08-02
 tags: [Java基礎, Java, 演算子]

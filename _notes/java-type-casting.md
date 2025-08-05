@@ -1,4 +1,5 @@
 ---
+layout: note
 title: 型変換（キャスト）とは？
 date: 2025-08-02
 tags: [Java基礎, Java, 型変換, キャスト, 暗黙的変換, 明示的変換]

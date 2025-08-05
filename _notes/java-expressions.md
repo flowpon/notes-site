@@ -1,4 +1,5 @@
 ---
+layout: note
 title: Javaの式（expression）とは？
 date: 2025-08-03
 tags: [Java基礎, Java, 式, 演算子, 評価]

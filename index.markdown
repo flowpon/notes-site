@@ -6,6 +6,16 @@ title: FlowBook
 <header>
   <button id="toggle-dark-mode">🌓 ダークモード切替</button>
   <h1>FlowBook📚</h1>
+  <!-- 検索ボックス -->
+  <div class="search-container">
+    <input 
+      type="text" 
+      id="search-input" 
+      placeholder="ノートのタイトルやタグで検索..." 
+      class="search-input"
+    >
+    <div class="search-icon">🔍</div>
+  </div>
 </header>
 
 <div id="home">

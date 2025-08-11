@@ -2,6 +2,7 @@
 layout: note
 title: "HTML入門ステップまとめ"
 date: 2025-08-11
+categories: [html]
 tags: [html, web基礎, ドメイン, 相対パス, 絶対パス]
 ---
 

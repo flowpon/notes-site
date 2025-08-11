@@ -2,7 +2,8 @@
 layout: note
 title: 式の評価順序と優先順位
 date: 2025-08-02
-tags: [Java基礎, Java, 演算子, 評価順序, 演算子の優先順位]
+categories: [Java]
+tags: [Java基礎, 演算子, 評価順序, 演算子の優先順位]
 ---
 
 ## 演算子の「順番」と「優先順位」

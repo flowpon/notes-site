@@ -2,7 +2,8 @@
 layout: note
 title: 繰り返し処理（for文、while文）
 date: 2025-08-05
-tags: [Java基礎, Java, for文, while文, do-while, ループ]
+categories: [Java]
+tags: [Java基礎, for文, while文, do-while, ループ]
 ---
 
 ## 🔁 同じことを何度も行う「ループ処理」

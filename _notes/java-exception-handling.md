@@ -1,7 +1,8 @@
 ---
 title: 例外処理（try-catch-finally）
 date: 2025-08-09
-tags: [Java基礎, Java, 例外処理, try-catch, finally, throw, throws]
+categories: [Java]
+tags: [Java基礎, 例外処理, try-catch, finally, throw, throws]
 ---
 
 ## ⚠️ プログラム中のエラー「例外」

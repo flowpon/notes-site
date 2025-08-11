@@ -2,7 +2,8 @@
 layout: note
 title: Javaの式（expression）とは？
 date: 2025-08-03
-tags: [Java基礎, Java, 式, 演算子, 評価]
+categories: [Java]
+tags: [Java基礎, 式, 演算子, 評価]
 ---
 
 ## Java における「式（expression）」とは？

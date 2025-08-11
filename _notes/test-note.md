@@ -2,7 +2,7 @@
 layout: note
 title: プログラミング初心者の学習メモ
 date: 2025-07-30
-tags: [プログラミング, メモ]
+categories: [メモ]
 ---
 
 # はじめに

@@ -2,7 +2,8 @@
 layout: note
 title: Javaのソースコード構造
 date: 2025-08-02
-tags: [Java基礎, Java, ソースコード構造, クラス, メソッド, main関数]
+categories: [Java]
+tags: [Java基礎, ソースコード構造, クラス, メソッド, main関数]
 ---
 
 ## Java プログラムの基本構造

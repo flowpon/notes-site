@@ -1,7 +1,8 @@
 ---
 title: 独自例外の作成と利用
 date: 2025-08-09
-tags: [Java応用, Java, 例外処理, throw, throws, Exception]
+categories: [Java]
+tags: [Java応用, 例外処理, throw, throws, Exception]
 ---
 
 ## 🛠 自分専用のエラーを作る「独自例外」

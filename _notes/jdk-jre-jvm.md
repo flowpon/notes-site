@@ -3,7 +3,7 @@ layout: note
 title: Javaの基礎概念（JDK・JRE・JVM）
 date: 2025-08-01
 categories: [Java]
-tags: [Java基礎, Java, JDK, JRE, JVM, 環境構築]
+tags: [Java基礎, JDK, JRE, JVM, 環境構築]
 ---
 
 ## Java の基本構成とは？

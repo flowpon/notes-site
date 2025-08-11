@@ -1,0 +1,6 @@
+<h2>{{ page.category }} の記事一覧</h2>
+<ul>
+  {% for note in site.notes %} {% if note.categories contains page.category %}
+  <li><a href="{{ note.url }}">{{ note.title }}</a></li>
+  {% endif %} {% endfor %}
+</ul>

@@ -26,7 +26,7 @@ tags: [Linux, SSH, メモ, コマンド]
 
 🔗 [**JSLinux（Alpine Linux）**](https://bellard.org/jslinux/vm.html?cpu=x86_64&url=alpine-x86_64.cfg&mem=256)
 
-**localhost:~#**👉 この # が表示されている状態は、サーバーにログインしており、コマンドで操作している最中だという意味
+**localhost:~#**👉 この # が表示されている状態は、サーバーにログインしており、コマンドで操作している最中だという意味  
 ![JSLinux（Alpine Linux）イメージ画像](https://i.postimg.cc/fL7Ljfcd/sukurinshotto-2026-01-16-120936.png)
 
 ---
@@ -104,7 +104,7 @@ sudo rm -rf /some/dir
 
 現在の作業場所の中身を確認するために使う
 
-###例
+### 例
 
 ```bash
 ls

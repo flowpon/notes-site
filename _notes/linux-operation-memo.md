@@ -3,7 +3,7 @@ layout: note
 title: Linux操作（基本コマンドと作業の流れ）
 date: 2026-01-16
 categories: [Linux]
-tags: [Linux, SSH, メモ, コマンド]
+tags: [Linux, SSH, コマンド]
 ---
 
 ## 🧪 練習環境（JSLinux）

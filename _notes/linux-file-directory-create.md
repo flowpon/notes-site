@@ -1,7 +1,7 @@
 ---
 layout: note
 title: Linux操作（ファイル・ディレクトリの作成と確認）
-date: 2026-01-16
+date: 2026-01-19
 categories: [Linux]
 tags: [Linux, コマンド, ファイル操作]
 ---
